@@ -1,0 +1,48 @@
+body{
+    position: absolute;
+}
+p{
+    font-size: 28px;
+    text-align: center;
+    font-weight: 800;
+    animation: colors 8s linear infinite;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#parallelogram{
+    background: black;
+    width: 10%;
+    height: 100%;
+    transform: skew(20deg);
+}
+
+#banner{
+    background-color: yellow;
+    width: 100%;
+}
+
+@keyframes colors{
+    0%{
+        color:#9400D3;
+    }
+    14%{
+        color:#4B0082;
+    }
+    28%{
+        color:	#0000FF;
+    }
+    42%{
+        color:#00FF00;
+    }
+    56%{
+        color:#FFFF00;
+    }
+    70%{
+        color:#FF7F00;
+    }
+    84%{
+        color:#FF0000;
+    }
+
+}

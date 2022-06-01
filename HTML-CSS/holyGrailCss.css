@@ -1,0 +1,48 @@
+body{
+    display:flex;
+    margin:0;
+    flex-direction:column;
+    min-height:100vh;
+  }
+  
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+  main{
+    display:flex;
+    min-height:800px;
+  }
+  
+  article{
+    flex:4 0 60%;
+    background:red;
+  }
+  
+  nav{
+    flex:1 1 20%;
+    background:orange;
+    order:-1;
+  }
+  
+  aside{
+    flex:1 1 20%;
+    background:yellow;
+  }
+  
+  header, footer{
+    background:blue;
+    min-height:100px;
+  }
+  
+  @media all and (max-width:640px){
+    main{
+      flex-direction:column;
+      flex-grow: 1;
+    }
+    nav{
+        order:0;
+    }
+  }

@@ -1,0 +1,5 @@
+n=int(input())
+nums=list(map(int,input().split()))
+numsum=sum(nums)
+missing_number=int((n*(n+1)/2)-numsum)
+print(missing_number)
